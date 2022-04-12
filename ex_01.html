@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<style>
+			
+			/* clearfix */
+			.clearfix{*zoom:1;}
+			.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+			.clearfix:after {clear: both;}
+		
+			.box-gray {                      /*body도 블록요소라서 높이가 안에 컨텐츠만큼*/
+				width: 850px;
+				background-color: #bcbcbc;
+			}
+			
+			.box-red {
+				width: 900px;
+				background-color: #ff0000;
+			}
+			
+			.box-blue {
+				width: 400px;
+				background-color: #0000ff;
+				float: left;
+			}
+			
+			.box-green {
+				width: 400px;
+				background-color: #00ff00;
+				float: left;
+			}
+		</style>			
+					
+		
+		
+	</head>
+	<body>
+		<div class="box-gray clearfix">  		<!-- 영역 만들기(레이아웃) - 영역별 작성 계획 -->
+			<div class="box-blue">파란색</div>
+			<div class="box-green">초록색</div>
+		</div>
+		<div class="box-red">빨간색</div>
+	
+	</body>
+</html>
